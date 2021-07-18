@@ -21,7 +21,8 @@ I work as an energy engineer last nine years. I want to gain new experience, lea
 
 ## Sample code
 
-```module.exports = function reverse (n) {
+```
+module.exports = function reverse (n) {
     let text = String(Math.abs(n));
     let output = '';
     for (let i = text.length-1; i >= 0; i--){
@@ -29,6 +30,7 @@ I work as an energy engineer last nine years. I want to gain new experience, lea
     }
     return output;
 }
+
 ```
 
 ## Work experience
