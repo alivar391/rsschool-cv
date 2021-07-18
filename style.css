@@ -1,0 +1,32 @@
+header {
+   padding-top: 30px;
+   width: 1140px;
+   margin: 0 auto;
+}
+
+h1 {
+   font-family: "Verdana", sans-serif;
+   margin-right: auto;
+   margin-left: auto;
+   font-size: 50px;
+}
+.photostyle {
+   height: 200px;
+   border-radius: 20px;
+}
+
+.mainblock {
+   line-height: 1.5;
+   font-family: "Verdana", sans-serif;
+   width: 1100px;
+   margin-right: auto;
+   margin-left: auto;
+   }
+
+footer {
+   font-size: 10px;
+}
+
+.highlight {
+color: blue;
+}
