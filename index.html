@@ -4,37 +4,76 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width"> 
    <link rel="stylesheet" href="style.css">   
    <title>CV Anton Tananka</title>
+   
 </head>
 
 <body class="mainblock">   
-      <header>         
+      <header class="header">    
+         <div class="container"> 
+         <div class="header__body">
+            <a href="#" class="header__logo">
+               <img  src="" alt="">
+            </a>
+            <div class="header__burger">
+               <span></span>
+            </div>
+            <nav class="header__menu">
+               <ul class="header__list">
+                  <li>
+                     <a href="#contacts" class="header__link">Contacts</a>
+                  </li>
+                  <li>
+                     <a href="#about_me" class="header__link">About me</a>
+                  </li>
+                  <li>
+                     <a href="#my_skills" class="header__link">My skills</a>
+                  </li>
+                  <li>
+                     <a href="#sample_code" class="header__link">Sample code</a>
+                  </li>
+                  <li>
+                     <a href="#work_expirience" class="header__link">Work expirience</a>
+                  </li>
+                  <li>
+                     <a href="#education" class="header__link">Education</a>
+                  </li>
+                  <li>
+                     <a href="#english" class="header__link">English</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
          
-         <img class="photostyle" src="img/photo.jpg" alt="Anton Tananka">
-         <h1> Anton Tananka </h1>
+         
+      </div>    
       </header>
       
       <main>         
-         <section>
-            <h2> Contact information </h2>
+         <section class="content">
+
+         <img class="photostyle" src="img/photo.jpg" alt="Anton Tananka">
+         <h1> Anton Tananka </h1>
+            <h2 id="contacts"> Contact information </h2>
 
             <ul> 
                <li> Phone number: +375298843110 </li>
                <li> Email: patriot391@mail.ru </li>
-               <li> Discord: Anton Tananka (alivar391) </li>
+               <li> Discord: Anton Tananka (@alivar391) </li>
             </ul>
 
-            <h2> Some information about me</h2>
+            <h2 id="about_me"> Some information about me</h2>
 
-            <p> I work as an energy engineer last nine years. 
+            <article> I work as an energy engineer last nine years. 
                I want to gain new experience, learn how to develop 
                front-end applications and at the end of the course 
                to receive an offer from a junior front-end developer. 
                I have no experience in front-end development yet. 
-               I am able to achieve my goals and give up half way not in my rules.</p>
+               I am able to achieve my goals and give up half way not in my rules.</article>
 
-            <h2>My skills</h2>
+            <h2 id="my_skills">My skills</h2>
 
             <ul>
                <li>HTML</li>
@@ -45,7 +84,7 @@
                <li>VSCode</li>
             </ul>
 
-            <h2> Sample code </h2>
+            <h2 id="sample_code"> Sample code </h2>
 
             <pre class="highlight">
                module.exports = function reverse (n) {
@@ -57,16 +96,32 @@
                   return output;
                }
             </pre>
+            <h2 id="my_projects"> My projects </h2>
+            <h3>Whack-a-dolle</h3>
+            <figure>
+               <a href="https://rolling-scopes-school.github.io/alivar391-JSFEPRESCHOOL/whack-a-mole" target="_blank"><img src="img/whack.png" alt="whack a dolle"></a>
+               <figcaption>Browser game <strong>Whack-a-dolly</strong>. You need to catch all the animals that have escaped on the farm. The project uses a random appearance of targets, tracking the click event, animation, added sounds, implemented levels, storing points in the local storage</figcaption>
+            </figure>
+            <h3>Vertical-slider</h3>
+            <figure>
+               <a href="https://rolling-scopes-school.github.io/alivar391-JSFEPRESCHOOL/vertical-slider" target="_blank"><img src="img/vertical-slider.png" alt="vertical-slider"></a>
+               <figcaption>Application <strong>Vertical-slider</strong>. Vertical-slider has two parts. When scrolling, the images will scroll in opposite directions. Implemented the ability to scroll with the mouse wheel, mouse swipe and buttons on the slider.</figcaption>
+            </figure>
+            <h3>Museum</h3>
+            <figure>
+               <a href="https://rolling-scopes-school.github.io/alivar391-JSFEPRESCHOOL/museum" target="_blank"><img src="img/museum.jpg" alt="museum"></a>
+               <figcaption><strong>Louvre museum landing page.</strong>. Louvre museum landing page. In this project, the layout of the page layout has been done. Perfect pixel application used.</figcaption>
+            </figure>
 
-            <h2> Work experience </h2>
+            <h2 id="work_expirience"> Work experience </h2>
 
             <p> I have no experience in IT yet. </p>
 
-            <h2> Education </h2>
+            <h2 id="education"> Education </h2>
 
-            <p> I completed the CS50 Harvard online course. I am learning JS with learn.JavaScript. </p>
+            <p> I completed the CS50 Harvard online course. I am learning JS with learn.JavaScript. In 2021 took the course "JavaScript / Front-end rpe school"</p>
          
-            <h2> English </h2>
+            <h2 id="english"> English </h2>
             <p> I speak English at A2 level. I continue my intensive training in English. </p>
          
          </section>
@@ -76,7 +131,7 @@
             
             <ul class="footer_list">
                
-               <li><time> 2021-07-18 </time></li>
+               <li><time> 2021-09-19 </time></li>
                <li><a href="https://github.com/alivar391"><img class="logo" src="./img/github.png" alt="Github logo"></a></li>
                <li><a href="https://rs.school/js/"><img class="logo" src="./img/rs_school_js.svg" alt="RSSCHOOL"></a></li>
                
@@ -85,5 +140,7 @@
 
 
       </main>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>
