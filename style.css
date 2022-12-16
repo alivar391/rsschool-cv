@@ -32,6 +32,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: rgb(63, 63, 63);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.15em;
+  color: #c0c5c9;
 }
 
 ul[class],
@@ -60,14 +63,15 @@ select {
 }
 
 .container {
-  max-width: 1280px;
-  background-color: rgb(107, 104, 104);
+  max-width: 1400px;
+  /* background-color: rgb(107, 104, 104); */
   margin: auto;
 }
 
 header {
   height: 400px;
   padding-top: 50px;
+  display: flex;
 }
 
 .avatar {
@@ -79,9 +83,27 @@ header {
 .left-side {
   width: 40%;
   padding: 20px;
+  text-align: right;
 }
 
 .right-side {
   width: 60%;
   padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h1 > span,
+li > span {
+  color: #e6b121;
+}
+
+.profession {
+}
+
+section {
+  display: flex;
 }
