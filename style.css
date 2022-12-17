@@ -35,7 +35,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: rgb(63, 63, 63);
+  background-color: #2b2c2c;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.15em;
   color: #c0c5c9;
@@ -73,7 +73,6 @@ select {
 
 .container {
   max-width: 1400px;
-  /* background-color: rgb(107, 104, 104); */
   margin: auto;
 }
 
