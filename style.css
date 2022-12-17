@@ -134,7 +134,8 @@ section {
   list-style: none;
 }
 
-.skills > ul > li::before {
+.skills > ul > li::before,
+.navigation > li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -144,16 +145,14 @@ section {
   background-color: #c0c5c9;
 }
 
-.skills > ul > li:hover:before {
+.skills > ul > li:hover:before,
+.navigation > li:hover::before {
   width: 100%;
 }
 
-.skills > ul > li::before {
+.skills > ul > li::before,
+.navigation > li::before {
   transition: width 0.5s;
-}
-
-.hljs {
-  background: rgb(63, 63, 63);
 }
 
 .navigation {
@@ -161,7 +160,9 @@ section {
 }
 
 .navigation > li {
-  padding-right: 30px;
+  margin-right: 30px;
+  position: relative;
+  width: max-content;
 }
 
 footer {
