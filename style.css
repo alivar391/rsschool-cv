@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #2b2c2c;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.15em;
+  color: #c0c5c9;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  height: 400px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.avatar {
+  height: 250px;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+.left-side {
+  width: 30%;
+  padding: 20px;
+  text-align: right;
+}
+
+.right-side {
+  width: 70%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+h1 > span,
+li > span {
+  color: #e6b121;
+}
+
+.profession {
+  font-size: 16px;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #c0c5c9;
+}
+
+section {
+  display: flex;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills > ul > li {
+  position: relative;
+  list-style: none;
+}
+
+.skills > ul > li::before,
+.navigation > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 1.5px;
+  background-color: #c0c5c9;
+}
+
+.skills > ul > li:hover:before,
+.navigation > li:hover::before {
+  width: 100%;
+}
+
+.skills > ul > li::before,
+.navigation > li::before {
+  transition: width 0.5s;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation > li {
+  margin-right: 30px;
+  position: relative;
+  width: max-content;
+}
+
+footer {
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  height: 30px;
+}
+
+.github-link {
+  text-decoration: none;
+  color: #c0c5c9;
+}
+
+figure {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+figure:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
