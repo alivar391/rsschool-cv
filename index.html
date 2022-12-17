@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <title>CV Anton Tananka</title>
 </head>
 <body>
@@ -20,6 +23,7 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#code">Code Example</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#english">English</a></li>
           </ul>
@@ -88,15 +92,43 @@
           <h2>Code example</h2>
         </div>
         <div class="right-side">
-          <pre>
-            module.exports = function reverse (n) {
-            let text = String(Math.abs(n));
-            let output = '';
-            for (let i = text.length-1; i >= 0; i--){
-            output = output + text[i];
-            }
-            return output;
-            }</pre>
+          <pre class="code">
+            <code class="javascript">
+              module.exports = function reverse (n) {
+              let text = String(Math.abs(n));
+              let output = '';
+              for (let i = text.length-1; i >= 0; i--){
+              output = output + text[i];
+              }
+              return output;
+              }
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="left-side">
+          <h2>Projects</h2>
+        </div>
+        <div class="right-side">
+          <h3 class="project-title">Momentum</h3>
+          <figure>
+            <a href="https://rolling-scopes-school.github.io/alivar391-JSFE2021Q3/momentum/" target="_blank" class="project-image">
+              <img src="img/rolling-scopes-school.github.io_alivar391-JSFE2021Q3_momentum_.png" alt="momentum"></a>
+            <figcaption>Web app <strong>Momentum</strong> is app where you can listen to the music, watch for the wether, read quotes, change background images and sources of them. I add two languages in this app </figcaption>
+          </figure>
+          <h3 class="project-title">Christmas task</h3>
+          <figure>
+            <a href="https://rolling-scopes-school.github.io/alivar391-JSFE2021Q3/christmas-task/" target="_blank">
+              <img src="img/rolling-scopes-school.github.io_alivar391-JSFE2021Q3_christmas-task_.png" alt="christmas task" class="project-image"></a>
+            <figcaption>Application <strong>Christmas task</strong>Christmas mood is everywhere. It is beautiful app in which you can choose toys and decorate your christmas tree. Use drag-n-drop technique. Change tree or background. Turn on New Year music, illumination and of corse snow.</figcaption>
+          </figure>
+          <h3 class="project-title">Art quiz</h3>
+          <figure>
+            <a href="https://rolling-scopes-school.github.io/alivar391-JSFE2021Q3/art-quiz/" target="_blank">
+              <img src="img/rolling-scopes-school.github.io_alivar391-JSFE2021Q3_art-quiz_.png" alt="Art Quiz" class="project-image"></a>
+            <figcaption><strong>Art Quiz</strong> is a quiz where you need to guess the authors of the paintings, the paintings of the author. Timed game and game without time limit. Thanks to this application, many students began to understand painting))</figcaption>
+          </figure>
         </div>
       </section>
       <section id="education">

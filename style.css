@@ -90,13 +90,13 @@ header {
 }
 
 .left-side {
-  width: 40%;
+  width: 30%;
   padding: 20px;
   text-align: right;
 }
 
 .right-side {
-  width: 60%;
+  width: 70%;
   padding: 20px;
 }
 
@@ -152,6 +152,10 @@ section {
   transition: width 0.5s;
 }
 
+.hljs {
+  background: rgb(63, 63, 63);
+}
+
 .navigation {
   display: flex;
 }
@@ -177,4 +181,17 @@ footer {
 .github-link {
   text-decoration: none;
   color: #c0c5c9;
+}
+
+figure {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+figure:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
